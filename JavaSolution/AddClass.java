@@ -4,14 +4,14 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 public class AddClass {
-    // Time complexity = O(n)
-    // Solution tracks visisted items in the array and record thier complemient
+    // Time and space complexity = O(n)
+    // Solution tracks visisted items in the array and record thier complement
     // i.e (target - arrayItem). the difference between a visited item and the
     // target is recored.
-    // It later check if the next visisted item is has been recorded as a
-    // compliment. If ir has, the
+    // It later check if the next visisted item has been recorded as a
+    // compliment. If it has, then the
     // Correct pair that sums up to the target is the currentItem and the diff
-    // between that item and th target.
+    // between that item and the target.
     private static int[] findIndex(int[] arr, int target) {
         HashMap<Integer, Integer> seen = new HashMap<>();
         for (int x = 0; x < arr.length; x++) {
