@@ -6,12 +6,11 @@ import java.util.HashMap;
 public class AddClass {
     // Time and space complexity = O(n)
     // Solution tracks visisted items in the array and record thier complement
-    // i.e (target - arrayItem). the difference between a visited item and the
-    // target is recored.
+    // i.e (target - arrayItem).
     // It later check if the next visisted item has been recorded as a
     // compliment. If it has, then the
     // Correct pair that sums up to the target is the currentItem and the diff
-    // between that item and the target.
+
     private static int[] findIndex(int[] arr, int target) {
         HashMap<Integer, Integer> seen = new HashMap<>();
         for (int x = 0; x < arr.length; x++) {
